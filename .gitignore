@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Dataset images — too large for GitHub, train locally instead
+dataset/chest_xray/**/*.jpeg
+dataset/chest_xray/**/*.jpg
+dataset/chest_xray/**/*.png
+
+# Temporary outputs
+outputs/*
+!outputs/.gitkeep
+
+# The trained model file (models/*.h5) is intentionally NOT ignored
+# so it gets committed and Streamlit Cloud can load it.
